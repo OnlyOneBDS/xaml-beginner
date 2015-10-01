@@ -32,21 +32,21 @@
       Text="Internal Test Version" 
       TextWrapping="Wrap" 
       VerticalAlignment="Bottom" />
-    <TextBlock 
-      x:Name="textBlock2" 
+    <Button 
+      x:Name="OrdersView" 
+      Content="Go to Orders View"
       Grid.Column="0"  
       Grid.Row="2" 
       HorizontalAlignment="Center" 
-      Text="**Go to Orders View**" 
-      TextWrapping="Wrap" 
-      VerticalAlignment="Center" />
-    <TextBlock 
-      x:Name="textBlock3" 
+      VerticalAlignment="Center" 
+      Click="OrdersView_Click" />
+    <Button 
+      x:Name="SubmitOrder" 
+      Content="Submit Order" 
       Grid.Column="1" 
       Grid.Row="2" 
-      HorizontalAlignment="Center" 
-      Text="**Submit Order**" 
-      TextWrapping="Wrap" 
-      VerticalAlignment="Center" />
+      HorizontalAlignment="Center"
+      VerticalAlignment="Center" 
+      Click="SubmitOrder_Click" />
   </Grid>
 </Page>
