@@ -18,7 +18,7 @@
       <RowDefinition Height="9*" />
       <RowDefinition Height="1*" />
     </Grid.RowDefinitions>
-    <GridView x:Name="OrdersGridView" />
+    <GridView x:Name="OrdersGridView" ItemsSource="{Binding OrderItems, Source={StaticResource DataManager}}" />
     <Button 
       x:Name="ClearOrders" 
       Content="Clear All Orders"

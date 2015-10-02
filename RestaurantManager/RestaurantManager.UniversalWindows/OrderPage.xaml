@@ -29,7 +29,7 @@
     <ListView 
       x:Name="listView" 
       Grid.Row="1" 
-      Grid.RowSpan="3" />
+      Grid.RowSpan="3" ItemsSource="{Binding MenuItems, Source={StaticResource DataManager}}" />
     <TextBlock 
       x:Name="textBlock" 
       Grid.Column="1" 
@@ -50,7 +50,7 @@
       x:Name="listView1" 
       Grid.Column="2" 
       Grid.Row="2" 
-      Grid.RowSpan="2"  />
+      Grid.RowSpan="2" ItemsSource="{Binding CurrentlySelectedMenuItems, Source={StaticResource DataManager}}"  />
     <Button 
       x:Name="AddOrder" 
       Content="Add to Order" 
